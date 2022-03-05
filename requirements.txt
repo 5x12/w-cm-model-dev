@@ -1,0 +1,10 @@
+jupyter
+numpy
+pandas
+pip
+scikit-learn
+matplotlib
+plotly
+notebook
+python-box
+pyyaml

@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  web:
+    image: mlopstutorial
+    build: ./
+    container_name: model-dev-test
+    command: jupyter notebook --port=8883 --no-browser --ip=0.0.0.0 --allow-root
+    volumes:
+      - ./:/app
+    environment:
+      - APP_NAME=MLOPSTUTORIAL
+    ports:
+      - "8883:8883"
